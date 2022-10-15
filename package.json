@@ -6,8 +6,9 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start",
-    "export": "next export",
+    "start": "next start -p $PORT",
+    "heroku-postbuild": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "build-export": "next build && next export",
     "lint": "next lint",
     "lint-fix": "next lint --fix"
